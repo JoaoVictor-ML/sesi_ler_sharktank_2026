@@ -39,7 +39,7 @@
 # Diagramas de Caso de Uso (DCU)
 <div>
 
-<img src = "DCU-GR1certo.drawio.png" width=800px height= 800px>
+<img src = "DCU-GR1.png" width=800px height= 800px>
 
 </div>
 <div>
