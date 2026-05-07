@@ -1,4 +1,4 @@
-# sesi_ler_sharktank_2026
+
 
 # PROJETO - GESTÃO DO REFEITÓRIO
 
