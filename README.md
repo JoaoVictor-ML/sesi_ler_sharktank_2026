@@ -31,13 +31,21 @@
 # Diagramas de Caso de Uso (DCU)
 <div>
 
-<img src = "planilha.png" width=400px height= 400px>
+<img src = "DCU-GR1.png" width=800px height= 800px>
 
 </div>
-
 <div>
 
-<img src = "planilha.png" width=400px height= 400px>
+<img src = "DCU-GR2.png" width=800px height= 800px>
+
+</div><div>
+
+<img src = "DCU-GR3.png" width=1000px height= 1000px>
+
+</div><div>
+
+<img src = "DCU-GR4.png" width=1000px height= 1000px>
 
 </div>
+
 
