@@ -12,4 +12,11 @@
 | -Leonardo Canina Marchiori;         |
 | -Eloísa Macedo da Silva.            |
 
-![funcionamentocadastro]()
+<div>
+
+<img src = "funcionamentogr.png" width=200px height= 200px>
+
+</div>
+
+# PLANILHA - Gastos Estimados do Projeto
+5 pastel e uma coca-cola
