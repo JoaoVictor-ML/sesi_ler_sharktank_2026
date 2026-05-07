@@ -14,9 +14,9 @@
 
 <div>
 
-<img src = "funcionamentogr.png" width=200px height= 200px>
+<img src = "funcionamentogr.png" width=400px height= 400px>
 
 </div>
 
 # PLANILHA - Gastos Estimados do Projeto
-5 pastel e uma coca-cola
+
