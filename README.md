@@ -19,4 +19,9 @@
 </div>
 
 # PLANILHA - Gastos Estimados do Projeto
+<div>
+
+<img src = "planilha.png" width=400px height= 400px>
+
+</div>
 
