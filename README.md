@@ -19,7 +19,7 @@
 <img src = "funcionamentogr.png" width=400px height= 400px>
 
 </div>
-  No sistema, os professores irão inserir os dados da quantidade de alunos que irão comer de acordo com a sala em que eles vão dar a primeira aula, os dados serão enviados automaticamente, ao entrar, há a verificação das credenciais dos gestores, da coordenação e dos professores
+  
   
 # PLANILHA - Gastos Estimados do Projeto
 
