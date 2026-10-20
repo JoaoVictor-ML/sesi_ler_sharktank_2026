@@ -18,11 +18,14 @@ O GR SESI é um sistema desenvolvido para melhorar e otimizar os processos inter
 - Iniciar Site do Projeto (LIMA)
 
 ## Atribuições
-- BD01: 
-- PBE01:
-- PSOF01:
-- LIMA:
+- BD01: Jéssica Guedes;
+- PBE01: João Victor e Leonardo Canina;
+- PSOF01: Eloísa Macedo;
+- LIMA: Lívia Fernandes.
 
 ## Prazo
-Início: 08/10
-Fim: 15/10
+Início: 08/10/2026
+Fim: 20/10/2026
+
+## Documentação do Projeto
+<a href="PROJETO GESTÃO DE REFEITÓRIO.pdf">Documentação</a>
