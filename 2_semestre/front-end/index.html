@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GR SESI - Gestão do Refeitório</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="topo">
+        <a class="logo" href="#" onclick="mostrarInicio(); return false;">
+            GR <span>SESI</span>
+        </a>
+
+        <nav>
+            <a href="#sobre">Sobre o projeto</a>
+            <button class="botao botao-claro botao-pequeno" onclick="mostrarLogin()">
+                Entrar
+            </button>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Tela inicial -->
+        <section id="inicio" class="inicio">
+
+            <div class="inicio-texto">
+                <p class="etiqueta">GESTÃO INTELIGENTE DO REFEITÓRIO</p>
+
+                <h1>
+                    Mais organização.<br>
+                    <span>Menos desperdício.</span>
+                </h1>
+
+                <p class="descricao">
+                    Uma forma simples de acompanhar as refeições,
+                    organizar informações e ajudar o SESI a planejar
+                    melhor a alimentação dos alunos.
+                </p>
+
+                <button class="botao botao-branco" onclick="mostrarLogin()">
+                    Acessar o sistema →
+                </button>
+
+                <div class="mini-info">
+                    <span>✓ Controle de refeições</span>
+                    <span>✓ Informações organizadas</span>
+                </div>
+            </div>
+
+            <div class="inicio-card">
+                <div class="icone-prato">🍃</div>
+
+                <p class="card-legenda">REFEITÓRIO SESI</p>
+
+                <h2>
+                    Alimentar melhor começa com organização.
+                </h2>
+
+                <div class="linha-dado">
+                    <span>Planejamento diário</span>
+                    <strong>✓</strong>
+                </div>
+
+                <div class="linha-dado">
+                    <span>Controle de consumo</span>
+                    <strong>✓</strong>
+                </div>
+
+                <div class="linha-dado">
+                    <span>Redução de desperdício</span>
+                    <strong>✓</strong>
+                </div>
+
+                <div class="bolha bolha-1"></div>
+                <div class="bolha bolha-2"></div>
+            </div>
+
+        </section>
+
+        <!-- Sobre o projeto -->
+        <section id="sobre" class="sobre">
+
+            <p class="etiqueta etiqueta-verde">NOSSO OBJETIVO</p>
+
+            <h2>Um refeitório mais eficiente para todos</h2>
+
+            <p>
+                O GR SESI ajuda a digitalizar a contagem dos alunos,
+                registrar a aceitação das refeições e reunir informações
+                importantes para o planejamento do refeitório.
+            </p>
+
+            <div class="recursos">
+
+                <article class="recurso">
+                    <div class="recurso-icone">👥</div>
+
+                    <h3>Contagem de alunos</h3>
+
+                    <p>
+                        Organize a quantidade de alunos prevista e
+                        acompanhe quantos realmente se alimentaram.
+                    </p>
+                </article>
+
+                <article class="recurso">
+                    <div class="recurso-icone">🥗</div>
+
+                    <h3>Aceitação da refeição</h3>
+
+                    <p>
+                        Registre avaliações e observações que podem
+                        ajudar na montagem dos cardápios.
+                    </p>
+                </article>
+
+                <article class="recurso">
+                    <div class="recurso-icone">📊</div>
+
+                    <h3>Controle e relatórios</h3>
+
+                    <p>
+                        Reúna dados sobre a comida produzida e
+                        ajude a reduzir o desperdício.
+                    </p>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Tela de login -->
+        <section id="login" class="login-area escondido">
+
+            <div class="login-lateral">
+
+                <a class="logo logo-branco" href="#"
+                   onclick="mostrarInicio(); return false;">
+                    GR <span>SESI</span>
+                </a>
+
+                <div>
+                    <p class="etiqueta">BEM-VINDO AO GR SESI</p>
+
+                    <h2>
+                        Informação organizada para um refeitório melhor.
+                    </h2>
+
+                    <p>
+                        Entre com seu acesso pedagógico para continuar.
+                    </p>
+                </div>
+
+                <p class="rodape-lateral">
+                    Gestão do Refeitório Escolar
+                </p>
+
+            </div>
+
+            <div class="login-formulario">
+
+                <button class="voltar" onclick="mostrarInicio()">
+                    ← Voltar ao início
+                </button>
+
+                <!-- Formulário de login -->
+                <div id="form-login">
+
+                    <h2>Acesse sua conta</h2>
+
+                    <p class="subtitulo">
+                        Preencha seus dados para entrar no sistema.
+                    </p>
+
+                    <form onsubmit="entrar(event)">
+
+                        <label for="email">E-mail institucional</label>
+                        <input
+                            id="email"
+                            type="email"
+                            placeholder="seuemail@sesisp.org.br"
+                            required
+                        >
+
+                        <label for="senha">Senha</label>
+                        <input
+                            id="senha"
+                            type="password"
+                            placeholder="Digite sua senha"
+                            required
+                        >
+
+                        <label class="titulo-perfil">
+                            Selecione seu perfil
+                        </label>
+
+                        <div class="perfis">
+
+                            <label class="perfil">
+                                <input
+                                    type="radio"
+                                    name="perfil"
+                                    value="Gestor"
+                                    required
+                                >
+                                <span>Gestor</span>
+                            </label>
+
+                            <label class="perfil">
+                                <input
+                                    type="radio"
+                                    name="perfil"
+                                    value="Coordenação"
+                                >
+                                <span>Coordenação</span>
+                            </label>
+
+                            <label class="perfil">
+                                <input
+                                    type="radio"
+                                    name="perfil"
+                                    value="Educacional"
+                                >
+                                <span>Educacional</span>
+                            </label>
+
+                        </div>
+
+                        <button
+                            class="botao botao-verde botao-largo"
+                            type="submit"
+                        >
+                            Entrar no sistema
+                        </button>
+
+                    </form>
+
+                    <div class="links-login">
+                        <button onclick="mostrarFormulario('cadastro')">
+                            Cadastrar
+                        </button>
+
+                        <span>•</span>
+
+                        <button onclick="mostrarFormulario('solicitar')">
+                            Solicitar cadastro
+                        </button>
+                    </div>
+
+                    <p class="aviso">
+                        Demonstração escolar: o acesso ainda não está
+                        conectado a um banco de dados.
+                    </p>
+
+                </div>
+
+                <!-- Formulário de cadastro -->
+                <div id="form-cadastro" class="escondido">
+
+                    <h2>Criar cadastro</h2>
+
+                    <p class="subtitulo">
+                        Preencha os dados para demonstrar um novo cadastro.
+                    </p>
+
+                    <form onsubmit="enviarFormulario(event, 'cadastro')">
+
+                        <label for="nome-cadastro">Nome completo</label>
+                        <input
+                            id="nome-cadastro"
+                            type="text"
+                            placeholder="Digite seu nome"
+                            required
+                        >
+
+                        <label for="email-cadastro">
+                            E-mail institucional
+                        </label>
+                        <input
+                            id="email-cadastro"
+                            type="email"
+                            placeholder="seuemail@sesisp.org.br"
+                            required
+                        >
+
+                        <label for="senha-cadastro">Criar senha</label>
+                        <input
+                            id="senha-cadastro"
+                            type="password"
+                            placeholder="Crie uma senha"
+                            required
+                        >
+
+                        <label class="titulo-perfil">
+                            Perfil solicitado
+                        </label>
+
+                        <div class="perfis">
+
+                            <label class="perfil">
+                                <input
+                                    type="radio"
+                                    name="perfil-cadastro"
+                                    value="Gestor"
+                                    required
+                                >
+                                <span>Gestor</span>
+                            </label>
+
+                            <label class="perfil">
+                                <input
+                                    type="radio"
+                                    name="perfil-cadastro"
+                                    value="Coordenação"
+                                >
+                                <span>Coordenação</span>
+                            </label>
+
+                            <label class="perfil">
+                                <input
+                                    type="radio"
+                                    name="perfil-cadastro"
+                                    value="Educacional"
+                                >
+                                <span>Educacional</span>
+                            </label>
+
+                        </div>
+
+                        <button
+                            class="botao botao-verde botao-largo"
+                            type="submit"
+                        >
+                            Cadastrar
+                        </button>
+
+                    </form>
+
+                    <button
+                        class="link-voltar"
+                        onclick="mostrarFormulario('login')"
+                    >
+                        Voltar para o login
+                    </button>
+
+                </div>
+
+                <!-- Solicitação de cadastro -->
+                <div id="form-solicitar" class="escondido">
+
+                    <h2>Solicitar cadastro</h2>
+
+                    <p class="subtitulo">
+                        Envie uma solicitação para a coordenação avaliar.
+                    </p>
+
+                    <form onsubmit="enviarFormulario(event, 'solicitar')">
+
+                        <label for="nome-solicitacao">
+                            Nome completo
+                        </label>
+                        <input
+                            id="nome-solicitacao"
+                            type="text"
+                            placeholder="Digite seu nome"
+                            required
+                        >
+
+                        <label for="email-solicitacao">
+                            E-mail institucional
+                        </label>
+                        <input
+                            id="email-solicitacao"
+                            type="email"
+                            placeholder="seuemail@sesisp.org.br"
+                            required
+                        >
+
+                        <label for="motivo">Motivo da solicitação</label>
+                        <textarea
+                            id="motivo"
+                            placeholder="Explique brevemente sua necessidade"
+                            required
+                        ></textarea>
+
+                        <button
+                            class="botao botao-verde botao-largo"
+                            type="submit"
+                        >
+                            Enviar solicitação
+                        </button>
+
+                    </form>
+
+                    <button
+                        class="link-voltar"
+                        onclick="mostrarFormulario('login')"
+                    >
+                        Voltar para o login
+                    </button>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Painel principal -->
+        <section id="painel" class="painel escondido">
+
+            <div class="painel-topo">
+
+                <div>
+                    <p class="etiqueta etiqueta-verde">
+                        ÁREA DO SISTEMA
+                    </p>
+
+                    <h2>Olá! Bem-vindo ao GR SESI.</h2>
+
+                    <p id="mensagem-perfil">
+                        Você está acessando como usuário.
+                    </p>
+                </div>
+
+                <button class="botao botao-contorno" onclick="sair()">
+                    Sair da conta
+                </button>
+
+            </div>
+
+            <div class="painel-cartoes">
+
+                <article class="painel-cartao">
+                    <span class="recurso-icone">👥</span>
+
+                    <h3>Contagem de alunos</h3>
+
+                    <p>
+                        Registre a previsão de alunos e quantos se alimentaram.
+                    </p>
+
+                    <button
+                        class="botao botao-verde"
+                        onclick="abrirRecurso('contagem')"
+                    >
+                        Abrir
+                    </button>
+                </article>
+
+                <article class="painel-cartao">
+                    <span class="recurso-icone">🥗</span>
+
+                    <h3>Avaliação da refeição</h3>
+
+                    <p>
+                        Registre a aceitação e observações sobre a refeição.
+                    </p>
+
+                    <button
+                        class="botao botao-verde"
+                        onclick="abrirRecurso('avaliacao')"
+                    >
+                        Abrir
+                    </button>
+                </article>
+
+                <article class="painel-cartao">
+                    <span class="recurso-icone">📋</span>
+
+                    <h3>Relatório de produção</h3>
+
+                    <p>
+                        Registre informações sobre a comida preparada.
+                    </p>
+
+                    <button
+                        class="botao botao-verde"
+                        onclick="abrirRecurso('relatorio')"
+                    >
+                        Abrir
+                    </button>
+                </article>
+
+            </div>
+
+            <!-- Área dos formulários do painel -->
+            <div id="recurso-form" class="recurso-form escondido">
+
+                <h3 id="titulo-recurso">Registro</h3>
+
+                <form onsubmit="salvarRegistro(event)">
+                    <div id="campos-recurso"></div>
+
+                    <button class="botao botao-verde" type="submit">
+                        Salvar registro de demonstração
+                    </button>
+                </form>
+
+                <p id="resultado-registro" class="resultado"></p>
+
+            </div>
+
+            <p class="aviso painel-aviso">
+                Esta é uma versão demonstrativa. Os registros ficam
+                apenas nesta tela e não são enviados para um servidor.
+            </p>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <a class="logo" href="#" onclick="mostrarInicio(); return false;">
+            GR <span>SESI</span>
+        </a>
+
+        <p>
+            Projeto escolar para uma gestão mais eficiente do refeitório.
+        </p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

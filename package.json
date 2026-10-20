@@ -1,0 +1,25 @@
+{
+  "name": "sesi_ler_sharktank_2026",
+  "version": "1.0.0",
+  "description": "O GR SESI é um sistema desenvolvido para melhorar e otimizar os processos internos do refeitório do SESI. O sistema conta com funcionalidades para coordenadores, gestores e professores, criando um sistema integrado e organizado, o qual auxilia na contagem de alunos, execução de refeições e aprovações diárias.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node --watch server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoaoVictor-ML/sesi_ler_sharktank_2026.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/JoaoVictor-ML/sesi_ler_sharktank_2026/issues"
+  },
+  "homepage": "https://github.com/JoaoVictor-ML/sesi_ler_sharktank_2026#readme",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.3.0"
+  }
+}
