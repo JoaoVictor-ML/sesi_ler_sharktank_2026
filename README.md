@@ -24,8 +24,17 @@ O GR SESI é um sistema desenvolvido para melhorar e otimizar os processos inter
 - LIMA: Lívia Fernandes.
 
 ## Prazo
-Início: 08/10/2026
+Início: 08/10/2026 <br>
 Fim: 20/10/2026
+
+### 2º Sprint
+- Terminar Banco de Dados (inserir 3 inserts por tabela) (verificar tabelas no DER)
+- Conectar Back-End com o Banco de Dados (CREATE) (READ)
+- Continuar a Construção do Site (Área de Cadastro) (Área de Mostrar Informações) (Preparar Comunicação com o Backend)
+
+## Prazo
+Início: 05/11/2026 <br>
+Fim: 12/11/2026
 
 ## Documentação do Projeto
 <a href="PROJETO GESTÃO DE REFEITÓRIO.pdf">Documentação</a>
