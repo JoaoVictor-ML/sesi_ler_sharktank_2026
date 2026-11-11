@@ -6,7 +6,7 @@ const con = mysql.createPool({
     port: 3306,
     user: "root",
     password: "",
-    database: "cadastros_gr"
+    database: "gestao_refeitorio"
 })
 
 module.exports = con

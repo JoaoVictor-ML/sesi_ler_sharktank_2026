@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<title>Entrar - GR-SESI</title>
+</head>
+<body data-pagina="login">
+<main class="fundo-login">
+  <h1>GR-SESI</h1>
+  <p></p>
+</main>
+
+<dialog class="login" id="login" aria-labelledby="titulo-login">
+  <div class="marca">GR-SESI</div>
+
+  <div class="abas" role="tablist">
+    <button class="aba" role="tab" id="aba-entrar" aria-selected="true">Entrar</button>
+    <button class="aba" role="tab" id="aba-cadastro" aria-selected="false">Criar conta</button>
+  </div>
+
+  <form id="form-entrar">
+    <h2 id="titulo-login">Entrar</h2>
+    <p class="sub"></p>
+    <div class="campo"><label for="e-email">E-mail</label><input id="e-email" type="email" required autocomplete="email"></div>
+    <div class="campo"><label for="e-senha">Senha</label><input id="e-senha" type="password" required autocomplete="current-password"></div>
+    <div class="campo"><label for="e-funcao">Entrar como</label>
+      <select id="e-funcao" required>
+        <option value="prof">Professor(a)</option>
+        <option value="coord">Coordenação</option>
+        <option value="gestor">Gestor(a)</option>
+      </select>
+    </div>
+    <p class="erro" id="erro-entrar" role="alert"></p>
+    <button class="btn" type="submit">Entrar</button>
+  </form>
+
+  <form id="form-cadastro" hidden>
+    <h2>Criar conta</h2>
+    <p class="sub"></p>
+    <div class="campo"><label for="c-nome">Nome completo</label><input id="c-nome" required autocomplete="name"></div>
+    <div class="campo"><label for="c-email">E-mail institucional</label><input id="c-email" type="email" required autocomplete="email"></div>
+    <div class="linha-dupla">
+      <div class="campo"><label for="c-cpf">CPF</label><input id="c-cpf" required inputmode="numeric" maxlength="14"></div>
+      <div class="campo"><label for="c-tel">Telefone</label><input id="c-tel" type="tel" required autocomplete="tel"></div>
+    </div>
+    <div class="linha-dupla">
+      <div class="campo"><label for="c-funcao">Função</label>
+        <select id="c-funcao" required>
+          <option value="" disabled selected>Selecione</option>
+          <option value="prof">Professor(a)</option>
+          <option value="coord">Coordenação</option>
+          <option value="gestor">Gestor(a)</option>
+        </select>
+      </div>
+      <div class="campo"><label for="c-reg">Matrícula</label><input id="c-reg" required></div>
+    </div>
+    <div class="linha-dupla">
+      <div class="campo"><label for="c-senha">Senha</label><input id="c-senha" type="password" required minlength="8" autocomplete="new-password"></div>
+      <div class="campo"><label for="c-conf">Confirmar senha</label><input id="c-conf" type="password" required autocomplete="new-password"></div>
+    </div>
+    <label class="aceite"><input type="checkbox" required><span>Li e aceito os termos de uso e a política de privacidade.</span></label>
+    <p class="erro" id="erro-cadastro" role="alert"></p>
+    <button class="btn" type="submit">Criar conta</button>
+  </form>
+</dialog>
+
+<script src="login.js"></script>
+</body>
+</html>
