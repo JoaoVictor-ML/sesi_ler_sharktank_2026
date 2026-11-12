@@ -7,7 +7,7 @@
 
 | PARTICIPANTES:                      |
 |:-----------------------------------:|
-| -João Victor Moraes Lopes; (Líder)  |
+| -João Victor Moraes Lopes;  |
 | -Jéssica Guedes Vaz;                |
 | -Lívia Fernandes de Morais;         |
 | -Leonardo Canina Marchiori;         |
